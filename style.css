@@ -12,45 +12,59 @@ body {
     list-style-type: none;
 }
 
+.content__wrapper {
+	background-color: #005ab1;
+	border-radius: 50%;
+	display: flex;
+	height: 150px;
+	width: 150px;
+}
+
 .content__sphere {
-    width: 150px;
-    height: 150px;
-    margin: 2em;
+    width: 100%;
+    height: 100%;
     border-style: solid;
     border-width: 2px;
     border-radius: 50%;
     filter: contrast(170%) brightness(1000%);
     background: 
-      radial-gradient(circle at 144% -24%, rgb(195, 195, 232) 30%, rgba(0,0,0,0) 60%),
-      url(./noise.svg);   
+        radial-gradient(circle at 96% -4%, rgb(217, 217, 239), rgba(89, 28, 255, 0)),
+        url(./noise.svg);
 }
 
-.content__sphere:nth-of-type(2) {
+.content__wrapper:nth-of-type(2) {
     margin-left: 40vw;
     margin-bottom: 2vw;
     width: 300px;
     height: 300px;
 }
 
-.content__sphere:nth-of-type(3) {
+.content__wrapper:nth-of-type(3) {
     margin-left: 30vw;
     margin-bottom: 3vw;
     width: 200px;
     height: 200px;
 }
 
-.content__sphere:nth-of-type(4) {
+.content__wrapper:nth-of-type(4) {
     margin-left: 5vw;
     margin-bottom: 2vw;
     width: 350px;
     height: 350px;
 }
 
-.content__sphere:nth-of-type(5) {
+.content__wrapper:nth-of-type(5) {
     margin-left: 30vw;
     width: 250px;
     height: 250px;
 }
+
+.line{
+    position:absolute;
+    z-index: -1;
+    width:1px;
+    background-color:#eceaef; 
+} 
 
 header {
     display: flex;
@@ -62,6 +76,8 @@ h1 {
     font-size: 6em;
     letter-spacing: 5pt;
     color: #eceaef;
+	padding: 5px;
+	margin: 5px;
 }
 
 main { 
