@@ -2,8 +2,8 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="viewport" text="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" text="ie=edge">
 		<title>Gathering Garden</title>
 		<link rel="stylesheet" href="./style.css">
 	</head>
@@ -16,11 +16,15 @@
 				<div>
 					<ul class="content">
 						<li id="sphere-1" class="content__wrapper" >
-							<div class="content__sphere"></div>
+							<div class="content__sphere">
+								<a class="content__link" href="?text=poem.html"></a>
+							</div>
 						</li>
 						<div class="line" id="line-1"></div>
 						<li id="sphere-2" class="content__wrapper" >
-							<div  class="content__sphere"></div>
+							<div class="content__sphere">
+								<a class="content__link" href="?text=wildflowers.html"></a>
+							</div>
 						</li>
 						<div class="line" id="line-2"></div>
 						<li id="sphere-3" class="content__wrapper" >
@@ -36,9 +40,28 @@
 						</li>
 					</ul>
 				</div>
-				<div id="window">
-					<iframe id="frame" title="poem" src="poem.html"></iframe>
+				<div id="window__wrapper">
+					<div id="window__text">
+						<iframe id="frame__text" title="poem" src="./contributions/poem.html"></iframe>
+					</div>
+					<div id="window__image">
+						<iframe id="frame__image" title="image" src="./contributions/weeds.png"></iframe>
+					</div>
 				</div>
+				<script>
+					(function () {
+						var frameQueryString = document
+							.location
+							.href
+							.split("text=")[1];
+
+						if (frameQueryString != undefined) {
+							document
+								.getElementById("frame__text")
+								.src = `./contributions/${frameQueryString}`;
+						}
+					})();
+				</script>
 			</div>
 		</main>
 		<script src="index.js"></script>
