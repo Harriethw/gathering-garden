@@ -33,7 +33,7 @@ nav {
 }
 
 .sphere__wrapper {
-  background-color: #005ab1;
+  background-color: #539de3;
   border-radius: 50%;
   height: 60px;
   width: 60px;
@@ -47,8 +47,8 @@ nav {
   background-color: pink;
   background: linear-gradient(
       90deg,
-      rgba(253, 29, 253, 0.80) 0%,
-      rgba(252, 176, 69, 0.80) 100%
+      rgba(253, 29, 253, 0.8) 0%,
+      rgba(252, 176, 69, 0.8) 100%
     ),
     url(./noise.svg);
   transition: transform 600ms ease-in;
@@ -142,17 +142,6 @@ li.node__wrapper:nth-of-type(7) .sphere__wrapper {
 #frame__image {
   width: 30vw;
   height: 60vh;
-}
-
-.line {
-  position: absolute;
-  z-index: -1;
-  background: linear-gradient(
-      90deg,
-      rgba(253, 29, 252, 0.5634454465379901) 0%,
-      rgba(252, 176, 69, 0.3309524493391106) 100%
-    ),
-    url(./noise.svg);
 }
 
 header {
