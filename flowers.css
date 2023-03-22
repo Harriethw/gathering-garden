@@ -1,4 +1,13 @@
+#bed {
+  display: flex;
+}
+
 .flower__content {
-    color: antiquewhite;
-    font-size: xx-large;
+  color: antiquewhite;
+  font-size: 3em;
+  margin: 0px;
+}
+
+.flower__wrapper {
+    position: relative;
 }
