@@ -7,8 +7,13 @@ body {
   background-color: #005ab1;
   /* background-image: url("./assets/cyanotype.webp"); */
   background-repeat: space;
-  font-family: "Janger", sans-serif;
+  font-family: "Courier New", Courier, monospace;
   margin: 0;
+}
+
+#frame__image {
+  width: 30vw;
+  height: 60vh;
 }
 
 #frame__text {
@@ -19,14 +24,12 @@ body {
   height: 70vh;
 }
 
-#frame__image {
-  width: 30vw;
-  height: 60vh;
-}
-
 header {
   display: flex;
+  font-family: "Janger", sans-serif;
   justify-content: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
   width: 100vw;
 }
 
@@ -46,4 +49,44 @@ main {
 #page-wrapper {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+}
+
+.text__wrapper {
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.text__content {
+  padding: 3em;
+  background-color: rgb(245, 245, 245);
+}
+
+.text__content--signature {
+  padding-top: 1em;
+  border-top: dotted;
+}
+
+.text__heading {
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 0.3em;
+  color: whitesmoke;
+  font-size: x-large;
+  font-style: italic;
+  font-weight: bold;
+  border: solid whitesmoke;
+  padding: 2em;
+  position: relative;
+  overflow: clip;
+}
+
+.text__heading--background {
+  opacity: 0.5;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  z-index: -1;
 }

@@ -71,25 +71,36 @@
 					<div id="window__text">
 						<iframe id="frame__text" title="poem" src="./contributions/poem.html"></iframe>
 					</div>
-					<div id="window__image">
-						<iframe id="frame__image" title="image" src="./contributions/weeds.png"></iframe>
+				</div>
+				<div class="text__wrapper">
+					<div class="text__heading">
+						<h2>MANIFESTO FOR FUTURE OF PARTICIPATORY ART</h2>
+						<img class="text__heading--background" alt="background image of blurry woods" src="./contributions/dither_it_djuna_mount.png">
+					</div>
+					<div class="text__content">
+						<h3>
+							<span aria-hidden="true">&deg;</span> SEEDS OF HOPE <span aria-hidden="true">&deg;</span></h3>
+						<p>BRANCHES OF LISTENING, OF CARING, OF ACCEPTANCE</p>
+						<h3>
+							<span aria-hidden="true">&raquo;</span> OUR DEMANDS <span aria-hidden="true">&raquo;</span></h3>
+						<p>TIME TO MEMORIALISE, TO CELEBRATE, TO LOOK BACKWARDS AND FORWARDS</p>
+						<p>ACCEPT THE LIMITS OF WHAT YOU, AND YOUR ORGANISATION CAN DO</p>
+						<p>RECOGNISE PERSONALISE AND PROFESSIONAL LIMITS</p>
+						<p>NOT ACCEPTING THE ‘NORMALISING’ STANDARDS SOCIETY SOMETIMES SET FOR US</p>
+						<p>ALLOWING PEOPLE TO BE THEMSELVES</p>
+						<p>THE ABILITY TO ASK WHY</p>
+						<p>AND TO UNDO THE CENTURIES OF CONDITIONING – AND NOT INFLICT THESE CONDITIONS THAT WE HAD OURSELVES</p>
+						<p>PATIENCE. SPACE TO REFLECT</p>
+						<p>RELATIONSHIP BUILDING</p>
+						<p>DIFFERENT TACTICS OF CARE</p>
+						<p>TIME TO SIT AND ASSESS OUR OWN NEEDS</p>
+						<div class="text__content--signature">
+							<i>Ardis, Julie, Liz and Lucy</i>
+						</div>
 					</div>
 				</div>
-				<script>
-					(function () {
-						var frameQueryString = document
-							.location
-							.href
-							.split("text=")[1];
-
-						if (frameQueryString != undefined) {
-							document
-								.getElementById("frame__text")
-								.src = `./contributions/${frameQueryString}`;
-						}
-					})();
-				</script>
 			</div>
 		</main>
+		<script src="index.js"></script>
 	</body>
 </html>
