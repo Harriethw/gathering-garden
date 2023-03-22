@@ -12,7 +12,11 @@ body {
 }
 
 nav {
-  margin-left: -20vw;
+  rotate: 90deg;
+  display: flex;
+  width: fit-content;
+  margin-top: -20vh;
+  align-self: center;
 }
 
 .nodes {
