@@ -27,7 +27,7 @@ nav {
   transition: transform 600ms ease-in;
   transition-delay: 150ms;
   width: 50vw;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .node__wrapper:hover {

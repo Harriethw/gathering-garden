@@ -3,12 +3,44 @@
   src: url("JangerRegular-lgYWq.otf");
 }
 
+audio {
+  width: 80%;
+  border-radius: 2em;
+}
+
+.audio__wrapper {
+  background-color: whitesmoke;
+  background: radial-gradient(
+    circle at 96% -4%,
+    rgb(217, 217, 239),
+    rgba(89, 28, 255, 0)
+  ),
+  url(./noise.svg);
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 body {
   background-color: #005ab1;
   /* background-image: url("./assets/cyanotype.webp"); */
   background-repeat: space;
   font-family: "Courier New", Courier, monospace;
   margin: 0;
+}
+
+.content__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.content__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 #frame__image {
@@ -40,6 +72,15 @@ h1 {
   margin: 5px;
 }
 
+.image__wrapper {
+  margin-top: 2em;
+  border: whitesmoke solid ;
+}
+
+.image__wrapper img {
+  max-width: 500px;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -52,9 +93,10 @@ main {
 }
 
 .text__wrapper {
-  width: 60vw;
+  max-width: 40vw;
   display: flex;
   flex-direction: column;
+  margin: 2em;
 }
 
 .text__content {
@@ -86,6 +128,6 @@ main {
   left: 0;
   top: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
   z-index: -1;
 }
