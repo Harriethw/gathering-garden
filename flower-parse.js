@@ -13,6 +13,12 @@ const generateFlowers = () => {
     flowerElement.classList.add("flower__content");
     flowerWrapper.appendChild(flowerElement);
 
+    //add tooltip text
+    const tooltipText = document.createElement("span");
+    tooltipText.classList.add("flower__text");
+    tooltipText.innerHTML = flower["Body"]
+    flowerWrapper.appendChild(tooltipText)
+
     //add random position
     flowerWrapper.style.left = `${randomInRange(0, 200).toString()}px`;
     flowerWrapper.style.top = `${randomInRange(0, 400).toString()}px`; 

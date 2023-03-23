@@ -3,11 +3,28 @@
 }
 
 .flower__content {
-  color: antiquewhite;
+  color: whitesmoke;
   font-size: 3em;
   margin: 0px;
 }
 
+.flower__text {
+  background-color: whitesmoke;
+  border-radius: 2em;
+  padding: 2em;
+  position: absolute;
+  visibility: hidden;
+  z-index: 1;
+}
+
+.flower__content:hover {
+    color: orange;
+}
+
+.flower__wrapper:hover .flower__text {
+  visibility: visible;
+}
+
 .flower__wrapper {
-    position: relative;
+  position: relative;
 }
