@@ -7,10 +7,19 @@ const getFlowers = () => {
     .get()
     .then((querySnapshot) => {
       querySnapshot.forEach((doc) => {
-        addFlower(doc.data())
+        addFlower(doc.data());
       });
     })
-    .catch((error) => console.log(error));
+    .catch((error) => {
+      console.log(error);
+      addLocalFlowers();
+    });
+};
+
+const addLocalFlowers = () => {
+  flowerData.forEach((flower) => {
+    addFlower(flower)    
+  });
 };
 
 const addFlower = (flower) => {
