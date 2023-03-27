@@ -22,7 +22,7 @@ const addLocalFlowers = () => {
   });
 };
 
-const addFlower = (flower) => {
+const addFlower = (flower, id=null) => {
   const flowerContent = "&#9880;";
 
   const flowerWrapper = document.createElement("div");
@@ -39,8 +39,13 @@ const addFlower = (flower) => {
   flowerWrapper.appendChild(tooltipText);
 
   //add random position
-  flowerWrapper.style.left = `${randomInRange(0, 200).toString()}px`;
-  flowerWrapper.style.top = `${randomInRange(0, 400).toString()}px`;
+  flowerWrapper.style.left = `${randomInRange(0, window.innerWidth - 200).toString()}px`;
+  flowerWrapper.style.top = `${randomInRange(0, 500).toString()}px`;
+
+  //add id if present
+  if (id) {
+    flowerElement.setAttribute("id", id)
+  }
 
   //add to bed
   const bedElement = document.getElementById("bed");

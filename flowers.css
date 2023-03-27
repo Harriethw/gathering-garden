@@ -1,11 +1,13 @@
 #bed {
   display: flex;
+  height: 600px;
 }
 
 .flower__content {
   color: whitesmoke;
   font-size: 3em;
   margin: 0px;
+  position: absolute;
 }
 
 .flower__text {
@@ -18,7 +20,7 @@
 }
 
 .flower__content:hover {
-    color: orange;
+  color: orange;
 }
 
 .flower__wrapper:hover .flower__text {
@@ -27,4 +29,35 @@
 
 .flower__wrapper {
   position: relative;
+  height: 20px;
+}
+
+.flower__content--new {
+  color: pink;
+  font-size: 5em;
+}
+
+.form__wrapper {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  background: whitesmoke;
+  max-width: 60vw;
+  justify-content: center;
+  justify-self: center;
+  align-self: center;
+}
+
+.form__input {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+}
+
+.form__input label {
+  margin: 2em;
+}
+
+.hide {
+  display: none;
 }
