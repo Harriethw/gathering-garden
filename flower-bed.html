@@ -69,11 +69,28 @@
     <main>
       <h1>flower bed</h1>
       <div id="bed"></div>
+      <div class="form__wrapper">
+        <div id="log" class="form__log"></div>
+        <form id="flower-form" action="" method="get">
+          <div class="form__input">
+            <label for="text">Enter your flower text: </label>
+            <textarea type="text" name="text" id="text" required></textarea>
+          </div>
+          <div class="form__input">
+            <label for="email">Enter your name: </label>
+            <input type="author" name="author" id="author" required>
+          </div>
+          <div>
+            <input type="submit" value="Plant your flower">
+          </div>
+        </form>
+      </div>
     </main>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
     <script src="firebase.js"></script>
     <script src="flower-data.js"></script>
     <script src="flower-populate.js"></script>
+    <script src="flower-form.js"></script>
   </body>
 </html>
