@@ -70,6 +70,11 @@ h1 {
   color: #eceaef;
   padding: 5px;
   margin: 5px;
+  background: url(assets/cyanotype.png);
+  background-size: cover;
+  border-style: solid;
+  border-radius: 1em;
+  padding: 0.5em;
 }
 
 .image__wrapper {

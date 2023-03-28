@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+}
+
 nav {
   display: flex;
   width: fit-content;
@@ -12,32 +16,30 @@ body {
   height: 100vh;
 }
 
-main {
-  overflow: clip;
-}
-
 .nodes {
   display: flex;
   justify-content: center;
   left: 0;
+  margin: 0;
   padding: 0;
-  padding-top: 20vh;
+  padding-top: 15vh;
   list-style-type: none;
+  overflow: clip;
   height: 60vh;
 }
 
 .node__wrapper {
   flex-direction: column;
   height: 80vh;
-  border-top-right-radius: 4em;
-  border-top-left-radius: 4em;
+  border-top-right-radius: 5em;
+  border-top-left-radius: 5em;
   display: flex;
   flex-direction: row-reverse;
   background-color: pink;
   background: linear-gradient(
       90deg,
-      rgba(253, 29, 253, 0.8) 0%,
-      rgba(252, 176, 69, 0.8) 100%
+      rgba(248, 248, 248, 0.8) 0%,
+      rgba(250, 246, 241, 0) 100%
     ),
     url(./noise.svg);
   transition: transform 600ms ease-in;
@@ -55,20 +57,26 @@ li.node__wrapper:nth-of-type(2) {
 }
 
 li.node__wrapper:nth-of-type(2) .sphere__wrapper {
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
 }
 
+li.node__wrapper:nth-of-type(3) {
+  margin-top: 20px;
+}
 
 li.node__wrapper:nth-of-type(3) .sphere__wrapper {
-  width: 40px;
-  height: 40px;
+  width: 140px;
+  height: 140px;
 }
 
+li.node__wrapper:nth-of-type(4) {
+  margin-top: 100px;
+}
 
 li.node__wrapper:nth-of-type(4) .sphere__wrapper {
-  width: 20px;
-  height: 20px;
+  width: 60px;
+  height: 60px;
 }
 
 li.node__wrapper:nth-of-type(5) {
@@ -80,42 +88,53 @@ li.node__wrapper:nth-of-type(5) .sphere__wrapper {
   height: 85px;
 }
 
+li.node__wrapper:nth-of-type(6) {
+  margin-top: 250px;
+}
+
 li.node__wrapper:nth-of-type(6) .sphere__wrapper {
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
 }
 
 li.node__wrapper:nth-of-type(7) .sphere__wrapper {
-  width: 35px;
-  height: 35px;
+  width: 105px;
+  height: 105px;
 }
 
 .node__title {
   font-family: "Courier New", Courier, monospace;
+  color: black;
+  text-decoration: none;
 }
 
 .sphere__gradient {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  filter: contrast(170%) brightness(1000%);
   background: radial-gradient(
-      circle at 96% -4%,
-      rgb(217, 217, 239),
-      rgba(89, 28, 255, 0)
+      circle at 150% 89%,
+      rgba(225, 65, 232, 1),
+      rgba(236, 69, 228, 0.37)
+    ),
+    radial-gradient(
+      circle at 38% 13%,
+      rgba(255, 255, 0, 1),
+      rgba(255, 255, 0, 0)
     ),
     url(./noise.svg);
 }
 
 .sphere__link {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
   height: 100%;
   width: 100%;
 }
 
 .sphere__wrapper {
-  background-color: #539de3;
   border-radius: 50%;
   height: 60px;
   width: 60px;
