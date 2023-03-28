@@ -42,13 +42,14 @@ body {
       rgba(250, 246, 241, 0) 100%
     ),
     url(./noise.svg);
-  transition: transform 600ms ease-in;
+  transition: transform 900ms ease-in-out;
   transition-delay: 150ms;
   margin-left: 10px;
 }
 
 .node__wrapper:hover {
-  transition: transform 400ms ease-in;
+  transition-delay: 500ms;
+  transition: transform 600ms ease-in-out;
   transform: translateY(-7vw);
 }
 
