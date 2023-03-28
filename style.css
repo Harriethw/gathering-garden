@@ -11,11 +11,11 @@ audio {
 .audio__wrapper {
   background-color: whitesmoke;
   background: radial-gradient(
-    circle at 96% -4%,
-    rgb(217, 217, 239),
-    rgba(89, 28, 255, 0)
-  ),
-  url(./noise.svg);
+      circle at 96% -4%,
+      rgb(217, 217, 239),
+      rgba(89, 28, 255, 0)
+    ),
+    url(./noise.svg);
   height: 300px;
   width: 300px;
   border-radius: 50%;
@@ -41,6 +41,11 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+.content__wrapper {
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 #frame__image {
@@ -77,9 +82,24 @@ h1 {
   padding: 0.5em;
 }
 
+h1 a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+h2 {
+  color: whitesmoke;
+  padding: 0.5em;
+  border-style: solid;
+  border-radius: 1em;
+  letter-spacing: 0.3em;
+  background: url(assets/cyanotype.png);
+  width: 50vw;
+}
+
 .image__wrapper {
   margin-top: 2em;
-  border: whitesmoke solid ;
+  border: whitesmoke solid;
 }
 
 .image__wrapper img {
