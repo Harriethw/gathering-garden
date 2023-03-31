@@ -52,12 +52,32 @@ body {
   );
   height: 60vh;
   width: 50px;
+  transition: rotate 600ms ease-in-out;
 }
 
 .node__wrapper:hover {
   transition-delay: 500ms;
   transition: transform 600ms ease-in-out;
   transform: translateY(-7vw);
+}
+
+.node__wrapper:hover .sphere__gradient {
+  background: radial-gradient(
+      circle at 150% 89%,
+      rgba(225, 65, 232, 1),
+      rgba(239, 62, 230, 0.372)
+    ),
+    radial-gradient(
+      circle at 38% 13%,
+      rgba(255, 255, 0, 1),
+      rgba(255, 255, 0, 0.488)
+    ),
+    url(./noise.svg);
+}
+
+.node__wrapper:hover .node__wave {
+  transition: rotate 600ms ease-in-out;
+  rotate: 2deg;
 }
 
 li.node__wrapper:nth-of-type(2) {
@@ -174,6 +194,7 @@ li.node__wrapper:nth-of-type(7) .sphere__wrapper {
       rgba(255, 255, 0, 0)
     ),
     url(./noise.svg);
+  transition: all 600ms ease-in-out;
 }
 
 .sphere__link {
@@ -191,6 +212,6 @@ li.node__wrapper:nth-of-type(7) .sphere__wrapper {
   width: 60px;
   position: relative;
   left: 20px;
-  bottom: -12px;
+  bottom: -30px;
   z-index: 1;
 }
