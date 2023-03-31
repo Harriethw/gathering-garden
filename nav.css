@@ -77,6 +77,7 @@ body {
       rgba(255, 255, 0, 0.488)
     ),
     url(./noise.svg);
+  transition: background-color 600ms ease-in-out;
 }
 
 .node__wrapper:hover .node__wave {

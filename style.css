@@ -11,9 +11,14 @@ audio {
 .audio__wrapper {
   background-color: whitesmoke;
   background: radial-gradient(
-      circle at 96% -4%,
-      rgb(217, 217, 239),
-      rgba(89, 28, 255, 0)
+      circle at 150% 89%,
+      rgba(225, 65, 232, 1),
+      rgba(236, 69, 228, 0.37)
+    ),
+    radial-gradient(
+      circle at 38% 13%,
+      rgba(255, 255, 0, 1),
+      rgba(255, 255, 0, 0)
     ),
     url(./noise.svg);
   height: 300px;
@@ -98,8 +103,11 @@ h2 {
 }
 
 .image__wrapper {
+  display: flex;
   margin-top: 2em;
+  overflow: hidden;
   border: whitesmoke solid;
+  border-radius: 2em;
 }
 
 .image__wrapper img {
@@ -118,7 +126,10 @@ main {
 }
 
 .text__wrapper {
+  border: solid whitesmoke;
+  border-radius: 2em;
   max-width: 40vw;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   margin: 2em;
@@ -141,7 +152,6 @@ main {
   font-size: x-large;
   font-style: italic;
   font-weight: bold;
-  border: solid whitesmoke;
   padding: 2em;
   position: relative;
   overflow: clip;
