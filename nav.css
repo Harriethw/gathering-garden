@@ -26,6 +26,10 @@ body {
   list-style-type: none;
   overflow: clip;
   height: 60vh;
+  border: solid white;
+  border-radius: 2em;
+  width: 60vw;
+  align-self: center;
 }
 
 .node__wrapper {
@@ -167,8 +171,8 @@ li.node__wrapper:nth-of-type(7) {
 }
 
 li.node__wrapper:nth-of-type(7) .sphere__wrapper {
-  width: 105px;
-  height: 105px;
+  width: 30px;
+  height: 30px;
 }
 
 .node__title {
@@ -177,6 +181,7 @@ li.node__wrapper:nth-of-type(7) .sphere__wrapper {
   text-decoration: none;
   position: relative;
   z-index: 1;
+  font-size: large;
 }
 
 .sphere__gradient {
@@ -194,7 +199,7 @@ li.node__wrapper:nth-of-type(7) .sphere__wrapper {
       rgba(255, 255, 0, 0)
     ),
     url(./noise.svg);
-  transition: all 600ms ease-in-out;
+  transition: background-color 600ms ease-in-out;
 }
 
 .sphere__link {
