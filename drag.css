@@ -1,0 +1,30 @@
+.draggable {
+  position: absolute;
+  cursor: move;
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+  z-index: 1;
+}
+
+.draggable:active {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+
+.draggable__space {
+  border: solid white;
+  border-radius: 2em;
+  width: 100vw;
+  height: 120vh;
+  z-index: -1;
+  position: relative;
+}
+
+.draggable__text--heading {
+  color: whitesmoke;
+  font-size: xx-large;
+  border-bottom-style: dashed;
+  letter-spacing: 0.2em;
+}
