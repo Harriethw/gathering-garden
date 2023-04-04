@@ -25,8 +25,7 @@ body {
   list-style-type: none;
   overflow: clip;
   height: 60vh;
-  border: solid white;
-  border-radius: 2em;
+  border: dashed white;
   width: 60vw;
   align-self: center;
 }
@@ -34,7 +33,7 @@ body {
 .node__wave {
   background: linear-gradient(
       90deg,
-      rgba(248, 248, 248, 0.8) 0%,
+      rgba(0, 36, 232, 0.8) 0%,
       rgba(250, 246, 241, 0) 100%
     ),
     url(./noise.svg);
@@ -179,7 +178,6 @@ li.node__wrapper:nth-of-type(7) .sphere__wrapper {
 
 .node__title {
   font-family: "Courier New", Courier, monospace;
-  color: whitesmoke;
   text-decoration: none;
   position: relative;
   z-index: 1;
