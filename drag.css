@@ -13,6 +13,13 @@
   cursor: -webkit-grabbing;
 }
 
+.draggable__image img {
+  border-radius: 2em;
+  max-width: 50%;
+  left: 597px;
+  top: 771px;
+}
+
 .draggable__space {
   border: solid white;
   border-radius: 2em;
@@ -23,8 +30,24 @@
 }
 
 .draggable__text--heading {
-  color: whitesmoke;
+  left: 127px;
+  top: 1153px;
   font-size: xx-large;
   border-bottom-style: dashed;
   letter-spacing: 0.2em;
+}
+
+.draggable__text--heading:nth-of-type(2) {
+  left: 132px;
+  top: 708px;
+}
+
+.draggable__textarea {
+  left: 130px;
+  top: 847px;
+}
+
+.draggable__textarea textarea {
+  width: 477px;
+  height: 323px;
 }

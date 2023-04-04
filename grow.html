@@ -1,57 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>gathering garden - grow</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./nav.css" />
-    <link rel="stylesheet" href="./drag.css" />
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="./nav.css"/>
+    <link rel="stylesheet" href="./drag.css"/>
   </head>
   <body>
     <header>
-      <h1><a href="./index.html">Gathering Garden</a></h1>
+      <h1>
+        <a href="./index.html">Gathering Garden</a>
+      </h1>
     </header>
     <main>
       <div class="content__wrapper">
-        <h2>GROW</h2>
-        <div class="text__wrapper">
-          <div class="text__content">
-            <p>
+        <div class="content__row">
+          <div class="content__column">
+            <h2>GROW</h2>
+          </div>
+        </div>
+        <div class="content__row">
+          <div class="content__column">
+            <div class="text__wrapper">
+              <div class="text__content">
+                <p>
               add your own manifesto words and drag the assets below to make
               your own poster collage. (you can screenshot it when you're
               finished it as it won't be saved if you refresh the page)
             </p>
+              </div>
+            </div>
           </div>
         </div>
-        <div draggable="true" class="image__wrapper draggable" data-item="0">
-          <img
+        <div class="draggable__wrapper">
+          <div draggable="true" class="draggable__image draggable" data-item="0">
+            <img
             draggable="false"
             alt=""
             src="./contributions/dither_it_djuna_mount.png"
-          />
-        </div>
-        <div
+/>
+          </div>
+          <div
           draggable="true"
           class="draggable__text--heading draggable"
           data-item="1"
         >
-          <h3>MY MANIFESTO</h3>
-        </div>
-        <div
+            <h3>MY MANIFESTO</h3>
+          </div>
+          <div
           draggable="true"
           class="draggable__textarea draggable"
           data-item="2"
         >
-          <textarea id="story" name="story" rows="5" cols="33"></textarea>
-        </div>
-        <div
+            <textarea id="story" name="story" rows="5" cols="33"></textarea>
+          </div>
+          <div
           draggable="true"
           class="draggable__text--heading draggable"
           data-item="3"
         >
-          <h3>FLOURISH AND GROW TOGETHER</h3>
+            <h3>FLOURISH AND GROW TOGETHER</h3>
+          </div>
         </div>
         <div class="draggable__space"></div>
       </div>
