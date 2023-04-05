@@ -220,3 +220,25 @@ li.node__wrapper:nth-of-type(7) .sphere__wrapper {
   bottom: -30px;
   z-index: 1;
 }
+
+@media (min-width: 320px) {
+  .nodes {
+    height: 100%;
+    flex-direction: column;
+    overflow: visible;
+    padding-top: 1em;
+  }
+
+  .node__wave {
+    display: none;
+  }
+
+  .node__wrapper {
+    margin-top: 50px;
+    height: auto;
+  }
+
+  .sphere__link {
+    flex-direction: row;
+  }
+}
