@@ -206,7 +206,7 @@ main {
   height: 100%;
 }
 
-@media (min-width: 320px) {
+@media (max-width: 600px) {
   .audio__wrapper {
     flex-wrap: wrap;
     justify-content: center;

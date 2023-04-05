@@ -221,7 +221,7 @@ li.node__wrapper:nth-of-type(7) .sphere__wrapper {
   z-index: 1;
 }
 
-@media (min-width: 320px) {
+@media (max-width: 600px) {
   .nodes {
     height: 100%;
     flex-direction: column;
