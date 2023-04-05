@@ -21,10 +21,11 @@
 }
 
 .draggable__space {
+  align-self: center;
   border: solid white;
   border-radius: 2em;
-  width: 100vw;
-  height: 120vh;
+  width: 90vw;
+  height: 90vh;
   z-index: -1;
   position: relative;
 }
@@ -50,6 +51,7 @@
 }
 
 .draggable__textarea textarea {
+  font-size: xx-large;
   width: 477px;
   height: 323px;
 }
