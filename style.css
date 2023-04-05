@@ -8,7 +8,7 @@ audio {
   border-radius: 2em;
 }
 
-.audio__wrapper {
+.audio__controls {
   background-color: whitesmoke;
   background: radial-gradient(
       circle at 150% 89%,
@@ -29,6 +29,20 @@ audio {
   align-items: center;
 }
 
+.audio__caption {
+  align-items: center;
+  display: flex;
+  padding: 1em;
+  max-width: 50%;
+}
+
+.audio__wrapper {
+  background: white;
+  border-radius: 2em;
+  display: flex;
+  padding: 1em;
+}
+
 body {
   /* background-color: #005ab1; */
   /* background-image: url("./assets/cyanotype.webp"); */
@@ -44,9 +58,11 @@ body {
 }
 
 .content__row {
-  background: #28469d;
+  /* background: #27307d; */
+  background: url(assets/cyanotype.png);
+  background-size: cover;
   border-radius: 2em;
-  z-index: -1;
+  flex-wrap: wrap;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -118,6 +134,14 @@ h2 {
   width: 50vw;
 }
 
+.image__credit {
+  position: absolute;
+  padding: 1em;
+  background: white;
+  border-radius: 2em;
+  margin: 1em;
+}
+
 .image__wrapper {
   display: flex;
   margin-top: 2em;
@@ -157,6 +181,7 @@ main {
 }
 
 .text__heading {
+  display: flex;
   font-family: "Courier New", Courier, monospace;
   letter-spacing: 0.3em;
   color: whitesmoke;
@@ -168,6 +193,10 @@ main {
   overflow: clip;
 }
 
+.text__heading h3 {
+  z-index: 2;
+}
+
 .text__heading--background {
   opacity: 0.5;
   position: absolute;
@@ -175,5 +204,24 @@ main {
   top: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+}
+
+@media (min-width: 320px) {
+  .audio__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .content__column {
+    align-items: center;
+  }
+
+  .text__heading {
+    padding: 1em;
+  }
+
+  .text__wrapper {
+    margin: 1em;
+    max-width: 80vw;
+  }
 }
