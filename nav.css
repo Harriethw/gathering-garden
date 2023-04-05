@@ -24,7 +24,7 @@ body {
   padding-top: 15vh;
   list-style-type: none;
   overflow: clip;
-  height: 60vh;
+  height: 65vh;
   width: 60vw;
   align-self: center;
 }
@@ -32,7 +32,7 @@ body {
 .node__wave {
   background: linear-gradient(
       90deg,
-      rgba(0, 36, 232, 0.8) 0%,
+      rgba(255, 255, 255, 0.8) 0%,
       rgba(250, 246, 241, 0) 100%
     ),
     url(./noise.svg);
