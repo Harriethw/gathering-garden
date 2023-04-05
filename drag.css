@@ -30,6 +30,7 @@
 }
 
 .draggable__text--heading {
+  color: white;
   left: 77px;
   top: 2306px;
   font-size: xx-large;
@@ -38,6 +39,7 @@
 }
 
 .draggable__text--heading:nth-of-type(2) {
+  color: black;
   left: 119px;
   top: 1741px;
 }

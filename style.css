@@ -216,9 +216,15 @@ main {
   .content__wrapper {
     padding: 1em;
   }
+  
+  .image__credit {
+    font-size: small;
+    padding: 0.2em;
+  }
 
   .image__wrapper {
     margin: 1em;
+    max-width: 90vw;
   }
 
   .text__content {
