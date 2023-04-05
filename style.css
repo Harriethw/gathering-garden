@@ -207,14 +207,22 @@ main {
   height: 100%;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .audio__wrapper {
     flex-wrap: wrap;
     justify-content: center;
   }
 
+  .content__wrapper {
+    padding: 1em;
+  }
+
   .image__wrapper {
     margin: 1em;
+  }
+
+  .text__content {
+    padding: 1em;
   }
 
   .text__heading {
@@ -223,6 +231,6 @@ main {
 
   .text__wrapper {
     margin: 1em;
-    max-width: 80vw;
+    min-width: 80vw;
   }
 }
