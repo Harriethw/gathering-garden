@@ -52,6 +52,7 @@ body {
 }
 
 .content__column {
+  align-items: center;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -144,6 +145,8 @@ h2 {
 
 .image__wrapper {
   display: flex;
+  width: fit-content;
+  max-width: 60vw;
   margin-top: 2em;
   overflow: hidden;
   border: whitesmoke solid;
@@ -198,7 +201,7 @@ main {
 }
 
 .text__heading--background {
-  opacity: 0.5;
+  opacity: 0.8;
   position: absolute;
   left: 0;
   top: 0;
@@ -210,10 +213,6 @@ main {
   .audio__wrapper {
     flex-wrap: wrap;
     justify-content: center;
-  }
-
-  .content__column {
-    align-items: center;
   }
 
   .image__wrapper {

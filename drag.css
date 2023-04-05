@@ -30,21 +30,21 @@
 }
 
 .draggable__text--heading {
-  left: 127px;
-  top: 1153px;
+  left: 77px;
+  top: 2306px;
   font-size: xx-large;
   border-bottom-style: dashed;
   letter-spacing: 0.2em;
 }
 
 .draggable__text--heading:nth-of-type(2) {
-  left: 132px;
-  top: 708px;
+  left: 119px;
+  top: 1741px;
 }
 
 .draggable__textarea {
-  left: 130px;
-  top: 847px;
+  left: 141px;
+  top: 1914px;
 }
 
 .draggable__textarea textarea {
