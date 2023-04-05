@@ -25,7 +25,6 @@ body {
   list-style-type: none;
   overflow: clip;
   height: 60vh;
-  border: dashed white;
   width: 60vw;
   align-self: center;
 }
@@ -177,6 +176,7 @@ li.node__wrapper:nth-of-type(7) .sphere__wrapper {
 }
 
 .node__title {
+  color: white;
   font-family: "Courier New", Courier, monospace;
   text-decoration: none;
   position: relative;
