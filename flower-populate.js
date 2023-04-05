@@ -39,7 +39,7 @@ const addFlower = (flower, id=null) => {
   flowerWrapper.appendChild(tooltipText);
 
   //add random position
-  flowerWrapper.style.left = `${randomInRange(0, window.innerWidth - 200).toString()}px`;
+  flowerWrapper.style.left = `${randomInRange(0, window.innerWidth - 150).toString()}px`;
   flowerWrapper.style.top = `${randomInRange(0, 500).toString()}px`;
 
   //add id if present

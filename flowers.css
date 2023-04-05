@@ -38,6 +38,7 @@
 }
 
 .form__wrapper {
+  border-radius: 2em;
   padding: 2em;
   display: flex;
   flex-direction: column;
@@ -60,4 +61,19 @@
 
 .hide {
   display: none;
+}
+
+@media screen and (max-width: 600px) { 
+  #bed {
+    height: 1000px;
+  }
+
+  .form__input label {
+    margin-bottom: 1em;
+  }
+
+  .form__wrapper {
+    max-width: 80vw;
+    padding: 1em;
+  }
 }
