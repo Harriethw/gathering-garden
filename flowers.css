@@ -23,6 +23,7 @@
   color: orange;
 }
 
+.flower__wrapper:focus .flower__text,
 .flower__wrapper:hover .flower__text {
   visibility: visible;
 }

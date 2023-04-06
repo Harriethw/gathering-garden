@@ -31,11 +31,13 @@ const addFlower = (flower, id=null) => {
   flowerElement.innerHTML = flowerContent;
   flowerElement.classList.add("flower__content");
   flowerWrapper.appendChild(flowerElement);
+  flowerWrapper.setAttribute("tabindex", 0);
 
   //add tooltip text
   const tooltipText = document.createElement("span");
   tooltipText.classList.add("flower__text");
   tooltipText.innerHTML = flower.text;
+  tooltipText.role = "tooltip";
   flowerWrapper.appendChild(tooltipText);
 
   //add random position
