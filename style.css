@@ -161,6 +161,49 @@ main {
   flex-direction: column;
 }
 
+.quote__wrapper {
+  color: white;
+  font-size: xx-large;
+  overflow: hidden;
+  padding: 0.5em;
+}
+
+.quote__text {
+  /* animation properties */
+  -moz-transform: translateY(0%);
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+  
+  -moz-animation: scroll-animation 3s linear;
+  -webkit-animation: scroll-animation 3s linear;
+  animation: scroll-animation 3s linear;
+}
+
+/* for Firefox */
+@-moz-keyframes scroll-animation {
+  from { -moz-transform: translateY(100%); }
+  to { -moz-transform: translateY(0%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes scroll-animation {
+  from { -webkit-transform: translateY(100%); }
+  to { -webkit-transform: translateY(0%); }
+}
+
+@keyframes scroll-animation {
+  from {
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+  to {
+    -moz-transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+}
+
 .text__wrapper {
   border: solid whitesmoke;
   border-radius: 2em;
@@ -211,7 +254,7 @@ main {
   .audio__caption {
     max-width: 80vw;
   }
-  
+
   .audio__wrapper {
     flex-wrap: wrap;
     justify-content: center;
