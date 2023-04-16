@@ -243,3 +243,21 @@ li.node__wrapper:nth-of-type(7) .sphere__wrapper {
     flex-direction: row;
   }
 }
+
+@media (prefers-reduced-motion) {
+  .node__wrapper:hover {
+    transition: none;
+    transform: none;
+  }
+  
+  .node__wrapper:hover .sphere__gradient {
+    transition: none;
+  }
+  
+  .node__wrapper:hover .node__wave {
+    transition: none;
+    transform: none;
+    -moz-transform: none;
+    -webkit-transform: none;
+  }
+}

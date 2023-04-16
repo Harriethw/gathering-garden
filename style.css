@@ -181,14 +181,22 @@ main {
 
 /* for Firefox */
 @-moz-keyframes scroll-animation {
-  from { -moz-transform: translateY(100%); }
-  to { -moz-transform: translateY(0%); }
+  from {
+    -moz-transform: translateY(100%);
+  }
+  to {
+    -moz-transform: translateY(0%);
+  }
 }
 
 /* for Chrome */
 @-webkit-keyframes scroll-animation {
-  from { -webkit-transform: translateY(100%); }
-  to { -webkit-transform: translateY(0%); }
+  from {
+    -webkit-transform: translateY(100%);
+  }
+  to {
+    -webkit-transform: translateY(0%);
+  }
 }
 
 @keyframes scroll-animation {
@@ -267,7 +275,7 @@ main {
   .content__wrapper {
     padding: 0.5em;
   }
-  
+
   .image__credit {
     font-size: small;
     padding: 0.2em;
@@ -289,5 +297,18 @@ main {
   .text__wrapper {
     margin: 0;
     min-width: 90vw;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .quote__text {
+    /* animation properties */
+    -moz-transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+
+    -moz-animation: none;
+    -webkit-animation: none;
+    animation: none;
   }
 }
