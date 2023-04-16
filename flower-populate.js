@@ -33,12 +33,22 @@ const addFlower = (flower, id=null) => {
   flowerWrapper.appendChild(flowerElement);
   flowerWrapper.setAttribute("tabindex", 0);
 
-  //add tooltip text
-  const tooltipText = document.createElement("span");
-  tooltipText.classList.add("flower__text");
+  //create tooltip text
+  const tooltipElement = document.createElement("div");
+  tooltipElement.classList.add("flower__text");
+  tooltipElement.role = "tooltip";
+  
+  const tooltipText = document.createElement("p");
   tooltipText.innerHTML = flower.text;
-  tooltipText.role = "tooltip";
-  flowerWrapper.appendChild(tooltipText);
+  tooltipElement.appendChild(tooltipText)
+
+  //add tooltip auth
+  const tooltipAuthor = document.createElement("em");
+  tooltipAuthor.classList.add("flower__author");
+  tooltipAuthor.innerHTML = flower.author;
+  tooltipElement.appendChild(tooltipAuthor)
+
+  flowerWrapper.appendChild(tooltipElement)
 
   //add random position
   flowerWrapper.style.left = `${randomInRange(0, window.innerWidth - 20).toString()}px`;

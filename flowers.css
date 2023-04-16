@@ -3,6 +3,10 @@
   height: 600px;
 }
 
+.flower__author {
+  padding-top: 0.5em;
+}
+
 .flower__content {
   color: white;
   font-size: 3em;
