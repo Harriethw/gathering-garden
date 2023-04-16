@@ -208,13 +208,21 @@ main {
 }
 
 @media screen and (max-width: 600px) {
+  .audio__caption {
+    max-width: 80vw;
+  }
+  
   .audio__wrapper {
     flex-wrap: wrap;
     justify-content: center;
   }
 
+  .content__row {
+    padding: 0;
+  }
+
   .content__wrapper {
-    padding: 1em;
+    padding: 0.5em;
   }
   
   .image__credit {
@@ -236,7 +244,7 @@ main {
   }
 
   .text__wrapper {
-    margin: 1em;
-    min-width: 80vw;
+    margin: 0;
+    min-width: 90vw;
   }
 }

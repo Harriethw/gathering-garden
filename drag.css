@@ -1,3 +1,7 @@
+.drag__show {
+  display: none;
+}
+
 .draggable {
   position: absolute;
   cursor: move;
@@ -54,4 +58,14 @@
   font-size: xx-large;
   width: 477px;
   height: 323px;
+}
+
+@media screen and (max-width: 600px) {
+  .drag__hide {
+    display: none;
+  }
+
+  .drag__show {
+    display: flex;
+  }
 }
