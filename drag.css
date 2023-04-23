@@ -18,13 +18,14 @@
 }
 
 .draggable__image img {
-  border-radius: 2em;
-  max-width: 50%;
+  /* border-radius: 2em; */
+  max-width: 50vw;
   left: 597px;
   top: 771px;
 }
 
 .draggable__space {
+  background: whitesmoke;
   align-self: center;
   border: solid white;
   border-radius: 2em;
@@ -35,26 +36,28 @@
 }
 
 .draggable__text--heading {
-  color: white;
-  left: 77px;
-  top: 2306px;
+  background: wheat;
+  color: #041378;
   font-size: xx-large;
   border-bottom-style: dashed;
   letter-spacing: 0.2em;
+  z-index: 2;
 }
 
 .draggable__text--heading:nth-of-type(2) {
-  color: black;
-  left: 119px;
-  top: 1741px;
+  font-weight: 900;
+  color: #041378;
+
 }
 
 .draggable__textarea {
-  left: 141px;
-  top: 1914px;
+  z-index: 2;
 }
 
 .draggable__textarea textarea {
+  color: #041378;
+  border-bottom-style: dashed;
+  background: wheat;
   font-size: xx-large;
   width: 477px;
   height: 323px;
