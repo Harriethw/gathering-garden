@@ -84,6 +84,10 @@ body {
   -webkit-transform: translateZ(1px) rotate(2deg);
 }
 
+li.node__wrapper:nth-of-type(1) {
+  rotate: -4deg;
+}
+
 li.node__wrapper:nth-of-type(2) {
   margin-top: 100px;
   rotate: -4deg;
