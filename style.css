@@ -113,10 +113,10 @@ h1 {
   color: #eceaef;
   padding: 5px;
   margin: 5px;
-  background: url(assets/cyanotype.png);
+  background: url(assets/cyanotype_2.webp);
   background-size: cover;
   border-radius: 1em;
-  padding: 0.5em;
+  padding: 1em;
 }
 
 h1 a {
@@ -129,7 +129,7 @@ h2 {
   padding: 0.5em;
   border-radius: 1em;
   letter-spacing: 0.3em;
-  background: url(assets/cyanotype.png);
+  background: url(assets/cyanotype_3.webp);
   width: 50vw;
 }
 
