@@ -70,10 +70,6 @@
 }
 
 @media screen and (max-width: 600px) { 
-  #bed {
-    height: 1200px;
-  }
-
   .form__input label {
     margin-bottom: 1em;
   }
