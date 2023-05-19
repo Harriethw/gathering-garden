@@ -40,12 +40,11 @@ body {
     "M 20 41 c 0 30 -20 45 -20 75 c 0 30 20 45 20 75 c 0 30 -20 45 -20 75 c 0 30 20 45 20 75 c 0 30 -20 45 -20 75 c 0 30 20 45 20 90 c 0 30 -20 45 -20 75 c 0 30 20 45 20 75 c 0 30 -20 45 -20 75 c 0 30 20 45 20 75 c 0 30 -20 45 -20 75 c 0 30 20 45 20 75 L 50 956 c 0 -30 -20 -45 -20 -75 c 0 -30 20 -45 20 -75 c 0 -30 -20 -45 -20 -75 c 0 -30 20 -45 20 -75 c 0 -30 -20 -45 -20 -75 c 0 -30 20 -45 20 -75 c 0 -30 -20 -45 -20 -75 c 0 -30 20 -45 20 -75 c 0 -30 -20 -45 -20 -75 c 0 -30 20 -45 20 -75 c 0 -30 -20 -45 -20 -75 c 0 -30 20 -45 22 -93 A 1 1 0 0 0 20 40 Z"
   );
   height: 60vh;
-  width: 50px;
+  width: 60px;
   transition: transform 600ms ease-in-out;
 }
 
 .node__wrapper {
-  flex-direction: column;
   height: 80vh;
   border-top-right-radius: 5em;
   border-top-left-radius: 5em;
@@ -111,8 +110,8 @@ li.node__wrapper:nth-of-type(3) {
 }
 
 li.node__wrapper:nth-of-type(3) .sphere__wrapper {
-  width: 140px;
-  height: 140px;
+  width: 130px;
+  height: 130px;
 }
 
 li.node__wrapper:nth-of-type(3) .node__wave {
